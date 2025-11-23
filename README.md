@@ -58,14 +58,13 @@ Reduces numerical precision from 32-bit to 16-bit:
 ## **Submission Package**
 
 ```
-/PII NER
+/PII Entity Recognition for Noisy STT Transcripts
 │
 ├── out/                          FP16 Optimized Model
 │   ├── model.safetensors         (FP16 weights)
 │   ├── config.json
 │   ├── tokenizer files
 │   ├── dev_pred.json             (150 predictions)
-│   └── README_FP16.txt
 │
 ├── data/
 │   ├── train.jsonl              800 examples
@@ -177,10 +176,10 @@ Noise Patterns: Spelled numbers, "at"/"dot" symbols, variations
 
 This assignment successfully demonstrates:
 
-1. ✅ **High PII Precision** (0.808) for safety-critical detection
-2. ✅ **Low Latency** (16.82ms) for real-time applications
-3. ✅ **Perfect Detection** for critical entities (CREDIT_CARD, PERSON_NAME)
-4. ✅ **Innovative Optimization** (FP16) for 2.5x speedup
+1. **High PII Precision** (0.808) for safety-critical detection
+2. **Low Latency** (16.82ms) for real-time applications
+3. **Perfect Detection** for critical entities (CREDIT_CARD, PERSON_NAME)
+4. **Innovative Optimization** (FP16) for 2.5x speedup
 
 **The FP16 optimization achieved both targets without any trade-offs!**
 
